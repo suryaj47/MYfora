@@ -1,0 +1,104 @@
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.logo-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.app-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d47a1;
+  margin: 0;
+}
+
+
+.home-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0d47a1;
+}
+
+.app-highlight {
+  color: #1565c0;
+}
+
+/* Grid Layout */
+.home-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.home-card {
+  flex: 1;
+  min-width: 260px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Icons */
+.home-icon {
+  font-size: 48px;
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.home-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 24px;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #1565c0;
+}
+
+/* Specific Card Colors */
+.user-card .home-icon {
+  color: #1976d2;
+}
+
+.admin-card .home-icon {
+  color: #c62828;
+}

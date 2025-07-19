@@ -1,0 +1,112 @@
+.unapproved-users-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.app-name {
+  font-size: 24px;
+  color: #0d47a1;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  color: #0d47a1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.user-table thead {
+  background-color: #e3f2fd;
+}
+
+.user-table th,
+.user-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 15px;
+}
+
+.user-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.accept-btn,
+.reject-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.accept-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #e53935;
+  color: white;
+}
+
+.accept-btn:hover {
+  background-color: #388e3c;
+}
+
+.reject-btn:hover {
+  background-color: #c62828;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #bdbdbd;
+}
