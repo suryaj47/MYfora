@@ -4,3 +4,4 @@ client/node_modules/
 client/.cache/
 dist/
 build/
+server/.env
