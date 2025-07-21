@@ -19,7 +19,7 @@ function Login() {
     console.log("Email:", email);
     console.log("Password:", password);
     axios
-      .post("http://localhost:8050/api/authenticate", {
+      .post("https://myfora.onrender.com/api/authenticate", {
         email,
         password,
       })
@@ -34,7 +34,7 @@ function Login() {
   useEffect(() => {
     if (loggedIn) {
       axios
-        .post(`http://localhost:8050/api/getuserbyemail/${email}`)
+        .post(`https://myfora.onrender.com/api/getuserbyemail/${email}`)
         .then((response) => {
           setUserData(response.data);
         })

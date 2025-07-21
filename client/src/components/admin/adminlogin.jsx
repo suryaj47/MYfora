@@ -20,7 +20,7 @@ function AdminLogin() {
     console.log("Email:", email);
     console.log("Password:", password);
     axios
-      .post("http://localhost:8050/api/loginadmin", {
+      .post("https://myfora.onrender.com/api/loginadmin", {
         email,
         password,
       })
@@ -36,7 +36,7 @@ function AdminLogin() {
   useEffect(() => {
     if (loggedIn) {
       axios
-        .post(`http://localhost:8050/api/getadminbyemail/${email}`)
+        .post(`https://myfora.onrender.com/api/getadminbyemail/${email}`)
         .then((response) => {
           setUserData(response.data);
 

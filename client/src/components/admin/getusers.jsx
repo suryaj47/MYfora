@@ -9,7 +9,7 @@ function Getusers() {
 
   useEffect(() => {
    
-    axios.get('http://localhost:8050/api/getusers')
+    axios.get('https://myfora.onrender.com/api/getusers')
       .then(response => {
         setUsers(response.data);
         setLoading(false);

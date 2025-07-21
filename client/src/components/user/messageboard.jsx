@@ -11,7 +11,7 @@ function MessageBoard({ name,photo }) {
   // Fetch messages
   const fetchMessages = () => {
     axios
-      .get("http://localhost:8050/api/showmessage")
+      .get("https://myfora.onrender.com/api/showmessage")
       .then((res) => setMessages(res.data))
       .catch((err) => console.error("Error fetching messages:", err));
   };
@@ -34,7 +34,7 @@ useEffect(() => {
     }
 
     axios
-      .post("http://localhost:8050/api/addmessage", { name, message ,photo})
+      .post("https://myfora.onrender.com/api/addmessage", { name, message ,photo})
       .then(() => {
         setMessage(""); // clear message box
         fetchMessages(); // refresh messages

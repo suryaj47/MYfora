@@ -9,7 +9,7 @@ function NotApprovedUsers() {
 
   // Fetch users not approved
   useEffect(() => {
-    axios.get('http://localhost:8050/api/getnotapproval')
+    axios.get('https://myfora.onrender.com/api/getnotapproval')
       .then(response => {
         setUsers(response.data);
         setLoading(false);
@@ -26,7 +26,7 @@ const handleAccept = (userId) => {
   const randomPassword = Math.random().toString(36).slice(-8);
 
 
-  axios.put(`http://localhost:8050/api/update/${userId}`, {
+  axios.put(`https://myfora.onrender.com/api/update/${userId}`, {
     password: randomPassword
   })
     .then(response => {
@@ -43,7 +43,7 @@ const handleAccept = (userId) => {
 
 
  const handleReject = (userId) => {
-  axios.delete(`http://localhost:8050/api/delete/${userId}`)
+  axios.delete(`https://myfora.onrender.com/api/delete/${userId}`)
     .then(response => {
       alert("User deleted");
       // Optionally remove the user from the current list

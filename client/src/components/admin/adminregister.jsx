@@ -14,7 +14,7 @@ function AdminRegister() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8050/api/addadmin", {
+            const response = await axios.post("https://myfora.onrender.com/api/addadmin", {
                 name,
                 email,
                 password

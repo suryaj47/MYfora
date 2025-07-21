@@ -10,7 +10,7 @@ function GetAdmin() {
   useEffect(() => {
     const fetchAdminData = async () => {
       try {
-        const response = await axios.get('http://localhost:8050/api/getadmins');
+        const response = await axios.get('https://myfora.onrender.com/api/getadmins');
         setAdminData(response.data);
       } catch (error) {
         console.error('Error fetching admin data:', error);
@@ -20,7 +20,7 @@ function GetAdmin() {
   }, []);
       const handleDelete = async (adminId) => {
       try {
-        await axios.delete(`http://localhost:8050/api/deleteadmin/${adminId}`);
+        await axios.delete(`https://myfora.onrender.com/api/deleteadmin/${adminId}`);
         setAdminData(adminData.filter(admin => admin._id !== adminId));
       } catch (error) {
         console.error('Error deleting admin:', error);

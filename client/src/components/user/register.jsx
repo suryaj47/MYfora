@@ -15,7 +15,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8050/api/register", {
+            const response = await axios.post("https://myfora.onrender.com/api/register", {
                 name,
                 phoneno,
                 email,
