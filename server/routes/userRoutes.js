@@ -21,4 +21,11 @@ router.post("/getuserbyemail/:email", getuserbyemail);
 router.post("/getadminbyemail/:email", getadminbyemail);
 router.get("/getadmins", getAdmins);
 router.delete("/deleteadmin/:id", deleteAdmin);
+
+router.get('/ping', (req, res) => {
+  res.send('pong');
+});
+
+
+
 export default router;
