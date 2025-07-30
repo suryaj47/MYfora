@@ -11,6 +11,7 @@ import GetAdmin from "./components/admin/getadmin";
 import AdminProtectedRoute from "./components/admin/AdminProtectedRoute";
 import Home from "./components/home";
 
+
 function App() {
   return (
     <Router>
@@ -19,7 +20,6 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
         <Route path="/admin/login" element={<AdminLogin />} />
 
         <Route

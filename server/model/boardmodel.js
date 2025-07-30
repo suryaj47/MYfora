@@ -7,7 +7,11 @@ const boardSchema = new mongoose.Schema({
     },
     message:{
         type: String,
-        required: true,
+        required: false,
+    },
+    pdf:{
+     type: String,
+        required: false,
     },
     photo:{
         type: String,
@@ -15,7 +19,7 @@ const boardSchema = new mongoose.Schema({
     }
 },
 {
-  timestamps: true // ✅ auto-adds createdAt & updatedAt
+  timestamps: true 
 });
 
 export default mongoose.model("Board", boardSchema);
